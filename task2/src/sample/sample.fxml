@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="900.0">
+         <children>
+            <Button fx:id="addSatelite" layoutX="372.0" layoutY="300.0" mnemonicParsing="false" onAction="#addSatelite" prefWidth="130.0" text="Add satelite" />
+            <Button fx:id="deletePlanett" layoutX="224.0" layoutY="380.0" mnemonicParsing="false" onAction="#deletePlanett" prefWidth="130.0" text="Delete planett" />
+            <Button fx:id="updatePlanett" layoutX="224.0" layoutY="340.0" mnemonicParsing="false" onAction="#updatePlanett" prefWidth="130.0" text="Update planett" />
+            <Button fx:id="addPlanett" layoutX="223.0" layoutY="300.0" mnemonicParsing="false" onAction="#addPlanett" prefWidth="130.0" text="Add planett" />
+            <Button fx:id="addGalactic" layoutX="520.0" layoutY="300.0" mnemonicParsing="false" onAction="#addGalactic" prefWidth="130.0" text="Add galactic" />
+            <Button fx:id="deleteGalactic" layoutX="520.0" layoutY="340.0" mnemonicParsing="false" onAction="#deleteGalactic" prefWidth="130.0" text="Delete galactic" />
+            <Button fx:id="updateGalactic" layoutX="520.0" layoutY="380.0" mnemonicParsing="false" onAction="#updateGalactic" prefWidth="130.0" text="Update Galactic" />
+            <TreeView fx:id="treeView" layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="200.0" />
+            <TextField fx:id="codeSatelite" layoutX="280.0" layoutY="50.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="fromSatelite" layoutX="280.0" layoutY="85.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="toSatelite" layoutX="280.0" layoutY="122.0" prefHeight="25.0" prefWidth="111.0" />
+
+            <TextField fx:id="nameGalactic" layoutX="670.0" layoutY="52.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="planetsGalactic" layoutX="670.0" layoutY="87.0" prefHeight="25.0" prefWidth="111.0" />
+
+            <TextField fx:id="codePlanett" layoutX="480.0" layoutY="52.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="namePlanett" layoutX="480.0" layoutY="87.0" prefHeight="25.0" prefWidth="111.0" />
+
+            <TextField fx:id="tempPlanett" layoutX="480.0" layoutY="122.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="atmPlanett" layoutX="480.0" layoutY="157.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="lifePlanett" layoutX="480.0" layoutY="192.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="satelPlanett" layoutX="480.0" layoutY="227.0" prefHeight="25.0" prefWidth="111.0" />
+
+            <Button fx:id="updateSatelite" layoutX="372.0" layoutY="340.0" mnemonicParsing="false" onAction="#updateSatelite" prefWidth="130.0" text="Update satelite" />
+            <Button fx:id="deleteSatelite" layoutX="372.0" layoutY="380.0" mnemonicParsing="false" onAction="#deleteSatelite" prefWidth="130.0" text="Delete satelite" />
+            <Label fx:id="information" layoutX="564.0" layoutY="123.0" />
+            <Label layoutX="485.0" layoutY="29.0" text="Planet" />
+            <Label layoutX="285.0" layoutY="29.0" text="Satelite" />
+            <Label layoutX="223.0" layoutY="54.0" text="Radius" />
+            <Label layoutX="224.0" layoutY="89.0" text="Name" />
+            <Label layoutX="224.0" layoutY="126.0" text="Distance" />
+            <Label layoutX="398.0" layoutY="56.0" text="Radius" />
+            <Label layoutX="398.0" layoutY="91.0" text="Name" />
+            <Label layoutX="398.0" layoutY="124.0" text="Temperature" />
+            <Label layoutX="398.0" layoutY="160.0" text="Atmosphere" />
+            <Label layoutX="398.0" layoutY="196.0" text="Life" />
+            <Label layoutX="398.0" layoutY="232.0" text="Satelites" />
+            <Label layoutX="600.0" layoutY="54.0" text="Galactic" />
+            <Label layoutX="600.0" layoutY="89.0" text="Planets" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
